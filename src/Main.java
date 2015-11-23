@@ -6,6 +6,11 @@ import java.io.File;
 public class Main {
 
     public static void main(String [] args){
+        /*
+        JFileChooser jc=new JFileChooser();
+        jc.showOpenDialog(null);
+        TextReader fr= new TextReader(new File(jc.getSelectedFile().getPath()));
+         */
         TextReader fr= new TextReader(new File("/Users/Andreas/Documents/StringSearch/StringSearch.txt"));
     }
 }

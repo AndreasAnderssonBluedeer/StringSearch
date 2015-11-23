@@ -39,6 +39,17 @@ public class TextReader {
         } catch (java.io.IOException e) {
             e.printStackTrace();
         }
+        new StringSearch(this);
+    }
+    public char[] getCharArray(){
+        return this.charArray;
+    }
+    public void search(String search){
+        for(int i=0;i<charArray.length;i++){
+            if(search.charAt(0)==charArray[i]){
+                System.out.println("Found it!:"+charArray[i]+" ,i= "+i+"= "+search.charAt(0));
+            }
+        }
     }
 
 }
